@@ -1,0 +1,28 @@
+{
+    "manifest_version": 3,
+    "name": "SolidJS Chrome Extension",
+    "version": "1.0",
+    "description": "A Chrome extension built with SolidJS.",
+    "action": {
+        "default_popup": "src/popup/index.html",
+        "default_icon": "icons/icon128.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://colonist.io/*"
+            ],
+            "js": [
+                "src/content/index.tsx"
+            ]
+        }
+    ],
+    "permissions": [
+        "storage",
+        "tabs",
+        "activeTab"
+    ],
+    "icons": {
+        "128": "icons/icon128.png"
+    }
+}
