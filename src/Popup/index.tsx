@@ -1,9 +1,9 @@
 import { render } from "solid-js/web";
-import App from "../Components/App.tsx";
+import Popup from "./Popup.tsx";
 
 const appContainer = document.querySelector("#app-container");
 if (!appContainer) {
     throw new Error("Can not find AppContainer");
 }
 
-render(App, appContainer);
+render(Popup, appContainer);

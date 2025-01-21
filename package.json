@@ -10,7 +10,8 @@
         "lint": "eslint \"**/*.{ts,tsx}\""
     },
     "dependencies": {
-        "solid-js": "^1.9.3"
+        "solid-js": "^1.9.3",
+        "solid-styled-components": "^0.28.5"
     },
     "devDependencies": {
         "@crxjs/vite-plugin": "^2.0.0-beta.29",

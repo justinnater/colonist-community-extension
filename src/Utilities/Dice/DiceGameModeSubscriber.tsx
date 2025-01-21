@@ -1,10 +1,9 @@
-import { GameSubscriber } from "../Game/GameSubscriber.ts";
+import { GameModeSubscriber } from "../Game/GameModeSubscriber.ts";
 import { render } from "solid-js/web";
 import { HelpButton } from "../../Components/Dice/HelpButton.tsx";
 
-export class DiceGameSubscriber extends GameSubscriber {
+export class DiceGameModeSubscriber extends GameModeSubscriber {
     public startGame(): void {
-        console.log("DiceGameSubscriber: Starting game")
         const gameLogText = document.getElementById("help_buttons_section");
 
         if (gameLogText) {

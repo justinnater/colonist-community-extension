@@ -1,5 +1,7 @@
-import { DiceGameSubscriber } from "../Dice/DiceGameSubscriber.tsx";
+import { DiceGameModeSubscriber } from "../Dice/DiceGameModeSubscriber.tsx";
+import { GameEventController } from "./GameEventController.ts";
 
-export const subcribers = [
-    new DiceGameSubscriber(),
+export const subscribers = [
+    new DiceGameModeSubscriber(),
+    new GameEventController(),
 ];

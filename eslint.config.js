@@ -27,6 +27,7 @@ export default [
             ...solid.configs.recommended.rules,
             "object-curly-spacing": ["error", "always"], // Enforce spacing in imports
             "quotes": ["error", "double", { "avoidEscape": true, "allowTemplateLiterals": true }], // Enforce double quotes
+            "@typescript-eslint/no-unused-vars": ["error", { "argsIgnorePattern": "^_" }] // Use @typescript-eslint rule
         },
     },
 ];

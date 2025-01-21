@@ -1,8 +1,8 @@
-import { GameSubscriber } from "./GameSubscriber.ts";
-import { subcribers } from "./config.ts";
+import { GameModeSubscriber } from "./GameModeSubscriber.ts";
+import { subscribers } from "./config.ts";
 
-export class GameController {
-    private static subscribers: GameSubscriber[] = subcribers;
+export class GameModeController {
+    private static subscribers: GameModeSubscriber[] = subscribers;
 
     public static startLobby() {
         this.subscribers.forEach(subscriber => subscriber.startLobby());
@@ -19,10 +19,6 @@ export class GameController {
     }
 
     public static endGame() {
-        this.subscribers.forEach(subscriber => subscriber.endGame())
-    }
-
-    public static subscribe(subscriber: GameSubscriber) {
-        this.subscribers.push(subscriber);
+        this.subscribers.forEach(subscriber => subscriber.endGame());
     }
 }

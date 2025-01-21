@@ -1,4 +1,4 @@
-export abstract class GameSubscriber {
+export abstract class GameModeSubscriber {
     public startLobby(): void {};
     public endLobby(): void {};
 
